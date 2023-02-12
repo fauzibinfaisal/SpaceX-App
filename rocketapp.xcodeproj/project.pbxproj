@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB047ACC29985C0D0088C11F /* RocketDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB047ACB29985C0D0088C11F /* RocketDetailModel.swift */; };
+		EB047ACF2998840C0088C11F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB047ACE2998840C0088C11F /* UIViewExtension.swift */; };
+		EB047AD1299894D70088C11F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB047AD0299894D70088C11F /* StringExtension.swift */; };
+		EBA2DEEC2996AF65009AE700 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DEEB2996AF65009AE700 /* ContentView.swift */; };
+		EBA2DEEE2996AF67009AE700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA2DEED2996AF67009AE700 /* Assets.xcassets */; };
+		EBA2DEF22996AF67009AE700 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA2DEF12996AF67009AE700 /* Preview Assets.xcassets */; };
+		EBA2DEFC2996AF67009AE700 /* rocketappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DEFB2996AF67009AE700 /* rocketappTests.swift */; };
+		EBA2DF062996AF67009AE700 /* rocketappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF052996AF67009AE700 /* rocketappUITests.swift */; };
+		EBA2DF082996AF67009AE700 /* rocketappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF072996AF67009AE700 /* rocketappUITestsLaunchTests.swift */; };
+		EBA2DF1529971309009AE700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF1429971309009AE700 /* AppDelegate.swift */; };
+		EBA2DF1629971309009AE700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF1429971309009AE700 /* AppDelegate.swift */; };
+		EBA2DF1729971309009AE700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF1429971309009AE700 /* AppDelegate.swift */; };
+		EBA2DF19299713FC009AE700 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF18299713FC009AE700 /* SceneDelegate.swift */; };
+		EBA2DF1A299713FC009AE700 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF18299713FC009AE700 /* SceneDelegate.swift */; };
+		EBA2DF1B299713FC009AE700 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF18299713FC009AE700 /* SceneDelegate.swift */; };
+		EBA2DF2A29974952009AE700 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF2929974952009AE700 /* UIState.swift */; };
+		EBA2DF2B29974952009AE700 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF2929974952009AE700 /* UIState.swift */; };
+		EBA2DF2C29974952009AE700 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF2929974952009AE700 /* UIState.swift */; };
+		EBA2DF2F299749A6009AE700 /* RocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF2E299749A6009AE700 /* RocketService.swift */; };
+		EBA2DF30299749A6009AE700 /* RocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF2E299749A6009AE700 /* RocketService.swift */; };
+		EBA2DF31299749A6009AE700 /* RocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF2E299749A6009AE700 /* RocketService.swift */; };
+		EBA2DF33299749B7009AE700 /* RocketListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF32299749B7009AE700 /* RocketListService.swift */; };
+		EBA2DF34299749B7009AE700 /* RocketListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF32299749B7009AE700 /* RocketListService.swift */; };
+		EBA2DF35299749B7009AE700 /* RocketListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF32299749B7009AE700 /* RocketListService.swift */; };
+		EBA2DF37299749E5009AE700 /* RocketTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF36299749E5009AE700 /* RocketTileView.swift */; };
+		EBA2DF38299749E5009AE700 /* RocketTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF36299749E5009AE700 /* RocketTileView.swift */; };
+		EBA2DF39299749E5009AE700 /* RocketTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF36299749E5009AE700 /* RocketTileView.swift */; };
+		EBA2DF3F29974A2B009AE700 /* RocketListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF3E29974A2B009AE700 /* RocketListVM.swift */; };
+		EBA2DF4029974A2B009AE700 /* RocketListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF3E29974A2B009AE700 /* RocketListVM.swift */; };
+		EBA2DF4129974A2B009AE700 /* RocketListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF3E29974A2B009AE700 /* RocketListVM.swift */; };
+		EBA2DF4329974A3B009AE700 /* RocketListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF4229974A3B009AE700 /* RocketListModel.swift */; };
+		EBA2DF4429974A3B009AE700 /* RocketListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF4229974A3B009AE700 /* RocketListModel.swift */; };
+		EBA2DF4529974A3B009AE700 /* RocketListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF4229974A3B009AE700 /* RocketListModel.swift */; };
+		EBA2DF47299750B5009AE700 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF46299750B5009AE700 /* ImageLoader.swift */; };
+		EBA2DF48299750B5009AE700 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF46299750B5009AE700 /* ImageLoader.swift */; };
+		EBA2DF49299750B5009AE700 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF46299750B5009AE700 /* ImageLoader.swift */; };
+		EBA2DF4F2997518B009AE700 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF4E2997518B009AE700 /* LoadingView.swift */; };
+		EBA2DF502997518B009AE700 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF4E2997518B009AE700 /* LoadingView.swift */; };
+		EBA2DF512997518B009AE700 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF4E2997518B009AE700 /* LoadingView.swift */; };
+		EBA2DF53299751FD009AE700 /* RocketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF52299751FD009AE700 /* RocketListView.swift */; };
+		EBA2DF54299751FD009AE700 /* RocketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF52299751FD009AE700 /* RocketListView.swift */; };
+		EBA2DF55299751FD009AE700 /* RocketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF52299751FD009AE700 /* RocketListView.swift */; };
+		EBA2DF5B29975379009AE700 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF5A29975379009AE700 /* SearchBar.swift */; };
+		EBA2DF5C29975379009AE700 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF5A29975379009AE700 /* SearchBar.swift */; };
+		EBA2DF5D29975379009AE700 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF5A29975379009AE700 /* SearchBar.swift */; };
+		EBA2DF5F299760A9009AE700 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF5E299760A9009AE700 /* ImageView.swift */; };
+		EBA2DF60299760A9009AE700 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF5E299760A9009AE700 /* ImageView.swift */; };
+		EBA2DF61299760A9009AE700 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF5E299760A9009AE700 /* ImageView.swift */; };
+		EBA2DF6429979872009AE700 /* RocketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF6329979872009AE700 /* RocketResponse.swift */; };
+		EBA2DF6529979872009AE700 /* RocketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF6329979872009AE700 /* RocketResponse.swift */; };
+		EBA2DF6629979872009AE700 /* RocketResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF6329979872009AE700 /* RocketResponse.swift */; };
+		EBA2DF682997B1BE009AE700 /* FailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF672997B1BE009AE700 /* FailedView.swift */; };
+		EBA2DF692997B1BE009AE700 /* FailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF672997B1BE009AE700 /* FailedView.swift */; };
+		EBA2DF6A2997B1BE009AE700 /* FailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF672997B1BE009AE700 /* FailedView.swift */; };
+		EBA2DF6C2997CD7D009AE700 /* RocketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF6B2997CD7D009AE700 /* RocketDetailView.swift */; };
+		EBA2DF6D2997CD7D009AE700 /* RocketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF6B2997CD7D009AE700 /* RocketDetailView.swift */; };
+		EBA2DF6E2997CD7D009AE700 /* RocketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF6B2997CD7D009AE700 /* RocketDetailView.swift */; };
+		EBA2DF702997CDDA009AE700 /* RocketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF6F2997CDDA009AE700 /* RocketDetailViewModel.swift */; };
+		EBA2DF712997CDDA009AE700 /* RocketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF6F2997CDDA009AE700 /* RocketDetailViewModel.swift */; };
+		EBA2DF722997CDDA009AE700 /* RocketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF6F2997CDDA009AE700 /* RocketDetailViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBA2DEF82996AF67009AE700 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBA2DEDE2996AF65009AE700 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBA2DEE52996AF65009AE700;
+			remoteInfo = rocketapp;
+		};
+		EBA2DF022996AF67009AE700 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBA2DEDE2996AF65009AE700 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBA2DEE52996AF65009AE700;
+			remoteInfo = rocketapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB047ACB29985C0D0088C11F /* RocketDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailModel.swift; sourceTree = "<group>"; };
+		EB047ACE2998840C0088C11F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		EB047AD0299894D70088C11F /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		EBA2DEE62996AF65009AE700 /* rocketapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rocketapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA2DEEB2996AF65009AE700 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBA2DEED2996AF67009AE700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBA2DEEF2996AF67009AE700 /* rocketapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = rocketapp.entitlements; sourceTree = "<group>"; };
+		EBA2DEF12996AF67009AE700 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EBA2DEF72996AF67009AE700 /* rocketappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rocketappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA2DEFB2996AF67009AE700 /* rocketappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rocketappTests.swift; sourceTree = "<group>"; };
+		EBA2DF012996AF67009AE700 /* rocketappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rocketappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA2DF052996AF67009AE700 /* rocketappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rocketappUITests.swift; sourceTree = "<group>"; };
+		EBA2DF072996AF67009AE700 /* rocketappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rocketappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EBA2DF1429971309009AE700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBA2DF18299713FC009AE700 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBA2DF1C2997145C009AE700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EBA2DF2929974952009AE700 /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
+		EBA2DF2E299749A6009AE700 /* RocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketService.swift; sourceTree = "<group>"; };
+		EBA2DF32299749B7009AE700 /* RocketListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListService.swift; sourceTree = "<group>"; };
+		EBA2DF36299749E5009AE700 /* RocketTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketTileView.swift; sourceTree = "<group>"; };
+		EBA2DF3E29974A2B009AE700 /* RocketListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListVM.swift; sourceTree = "<group>"; };
+		EBA2DF4229974A3B009AE700 /* RocketListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListModel.swift; sourceTree = "<group>"; };
+		EBA2DF46299750B5009AE700 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		EBA2DF4E2997518B009AE700 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		EBA2DF52299751FD009AE700 /* RocketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListView.swift; sourceTree = "<group>"; };
+		EBA2DF5A29975379009AE700 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		EBA2DF5E299760A9009AE700 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		EBA2DF6329979872009AE700 /* RocketResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketResponse.swift; sourceTree = "<group>"; };
+		EBA2DF672997B1BE009AE700 /* FailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedView.swift; sourceTree = "<group>"; };
+		EBA2DF6B2997CD7D009AE700 /* RocketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailView.swift; sourceTree = "<group>"; };
+		EBA2DF6F2997CDDA009AE700 /* RocketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBA2DEE32996AF65009AE700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA2DEF42996AF67009AE700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA2DEFE2996AF67009AE700 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB047ACD299883F00088C11F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB047ACE2998840C0088C11F /* UIViewExtension.swift */,
+				EB047AD0299894D70088C11F /* StringExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EBA2DEDD2996AF65009AE700 = {
+			isa = PBXGroup;
+			children = (
+				EBA2DEE82996AF65009AE700 /* rocketapp */,
+				EBA2DEFA2996AF67009AE700 /* rocketappTests */,
+				EBA2DF042996AF67009AE700 /* rocketappUITests */,
+				EBA2DEE72996AF65009AE700 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBA2DEE72996AF65009AE700 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DEE62996AF65009AE700 /* rocketapp.app */,
+				EBA2DEF72996AF67009AE700 /* rocketappTests.xctest */,
+				EBA2DF012996AF67009AE700 /* rocketappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBA2DEE82996AF65009AE700 /* rocketapp */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF1429971309009AE700 /* AppDelegate.swift */,
+				EBA2DF18299713FC009AE700 /* SceneDelegate.swift */,
+				EBA2DEEB2996AF65009AE700 /* ContentView.swift */,
+				EBA2DF1F299748D0009AE700 /* Features */,
+				EBA2DF1E299748C0009AE700 /* Services */,
+				EBA2DF1D299748B8009AE700 /* Utils */,
+				EBA2DF1C2997145C009AE700 /* Info.plist */,
+				EBA2DEED2996AF67009AE700 /* Assets.xcassets */,
+				EBA2DEEF2996AF67009AE700 /* rocketapp.entitlements */,
+				EBA2DEF02996AF67009AE700 /* Preview Content */,
+			);
+			path = rocketapp;
+			sourceTree = "<group>";
+		};
+		EBA2DEF02996AF67009AE700 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DEF12996AF67009AE700 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EBA2DEFA2996AF67009AE700 /* rocketappTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DEFB2996AF67009AE700 /* rocketappTests.swift */,
+			);
+			path = rocketappTests;
+			sourceTree = "<group>";
+		};
+		EBA2DF042996AF67009AE700 /* rocketappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF052996AF67009AE700 /* rocketappUITests.swift */,
+				EBA2DF072996AF67009AE700 /* rocketappUITestsLaunchTests.swift */,
+			);
+			path = rocketappUITests;
+			sourceTree = "<group>";
+		};
+		EBA2DF1D299748B8009AE700 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EB047ACD299883F00088C11F /* Extension */,
+				EBA2DF2929974952009AE700 /* UIState.swift */,
+				EBA2DF46299750B5009AE700 /* ImageLoader.swift */,
+				EBA2DF5E299760A9009AE700 /* ImageView.swift */,
+				EBA2DF4E2997518B009AE700 /* LoadingView.swift */,
+				EBA2DF672997B1BE009AE700 /* FailedView.swift */,
+				EBA2DF5A29975379009AE700 /* SearchBar.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EBA2DF1E299748C0009AE700 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF2D29974995009AE700 /* Rocket */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EBA2DF1F299748D0009AE700 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF20299748DC009AE700 /* Rocket */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		EBA2DF20299748DC009AE700 /* Rocket */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF22299748EF009AE700 /* RocketDetail */,
+				EBA2DF21299748E3009AE700 /* RocketList */,
+			);
+			path = Rocket;
+			sourceTree = "<group>";
+		};
+		EBA2DF21299748E3009AE700 /* RocketList */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF282997493F009AE700 /* View */,
+				EBA2DF2729974930009AE700 /* ViewModel */,
+				EBA2DF2629974929009AE700 /* Model */,
+			);
+			path = RocketList;
+			sourceTree = "<group>";
+		};
+		EBA2DF22299748EF009AE700 /* RocketDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF252997491F009AE700 /* View */,
+				EBA2DF2429974903009AE700 /* ViewModel */,
+				EBA2DF23299748FC009AE700 /* Model */,
+			);
+			path = RocketDetail;
+			sourceTree = "<group>";
+		};
+		EBA2DF23299748FC009AE700 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB047ACB29985C0D0088C11F /* RocketDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBA2DF2429974903009AE700 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF6F2997CDDA009AE700 /* RocketDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EBA2DF252997491F009AE700 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF6B2997CD7D009AE700 /* RocketDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBA2DF2629974929009AE700 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF4229974A3B009AE700 /* RocketListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBA2DF2729974930009AE700 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF3E29974A2B009AE700 /* RocketListVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EBA2DF282997493F009AE700 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF36299749E5009AE700 /* RocketTileView.swift */,
+				EBA2DF52299751FD009AE700 /* RocketListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBA2DF2D29974995009AE700 /* Rocket */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF6229979844009AE700 /* Responses */,
+				EBA2DF2E299749A6009AE700 /* RocketService.swift */,
+				EBA2DF32299749B7009AE700 /* RocketListService.swift */,
+			);
+			path = Rocket;
+			sourceTree = "<group>";
+		};
+		EBA2DF6229979844009AE700 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				EBA2DF6329979872009AE700 /* RocketResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBA2DEE52996AF65009AE700 /* rocketapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBA2DF0B2996AF67009AE700 /* Build configuration list for PBXNativeTarget "rocketapp" */;
+			buildPhases = (
+				EBA2DEE22996AF65009AE700 /* Sources */,
+				EBA2DEE32996AF65009AE700 /* Frameworks */,
+				EBA2DEE42996AF65009AE700 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rocketapp;
+			productName = rocketapp;
+			productReference = EBA2DEE62996AF65009AE700 /* rocketapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBA2DEF62996AF67009AE700 /* rocketappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBA2DF0E2996AF67009AE700 /* Build configuration list for PBXNativeTarget "rocketappTests" */;
+			buildPhases = (
+				EBA2DEF32996AF67009AE700 /* Sources */,
+				EBA2DEF42996AF67009AE700 /* Frameworks */,
+				EBA2DEF52996AF67009AE700 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBA2DEF92996AF67009AE700 /* PBXTargetDependency */,
+			);
+			name = rocketappTests;
+			productName = rocketappTests;
+			productReference = EBA2DEF72996AF67009AE700 /* rocketappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBA2DF002996AF67009AE700 /* rocketappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBA2DF112996AF67009AE700 /* Build configuration list for PBXNativeTarget "rocketappUITests" */;
+			buildPhases = (
+				EBA2DEFD2996AF67009AE700 /* Sources */,
+				EBA2DEFE2996AF67009AE700 /* Frameworks */,
+				EBA2DEFF2996AF67009AE700 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBA2DF032996AF67009AE700 /* PBXTargetDependency */,
+			);
+			name = rocketappUITests;
+			productName = rocketappUITests;
+			productReference = EBA2DF012996AF67009AE700 /* rocketappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBA2DEDE2996AF65009AE700 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					EBA2DEE52996AF65009AE700 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					EBA2DEF62996AF67009AE700 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EBA2DEE52996AF65009AE700;
+					};
+					EBA2DF002996AF67009AE700 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = EBA2DEE52996AF65009AE700;
+					};
+				};
+			};
+			buildConfigurationList = EBA2DEE12996AF65009AE700 /* Build configuration list for PBXProject "rocketapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBA2DEDD2996AF65009AE700;
+			productRefGroup = EBA2DEE72996AF65009AE700 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBA2DEE52996AF65009AE700 /* rocketapp */,
+				EBA2DEF62996AF67009AE700 /* rocketappTests */,
+				EBA2DF002996AF67009AE700 /* rocketappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBA2DEE42996AF65009AE700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA2DEF22996AF67009AE700 /* Preview Assets.xcassets in Resources */,
+				EBA2DEEE2996AF67009AE700 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA2DEF52996AF67009AE700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA2DEFF2996AF67009AE700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBA2DEE22996AF65009AE700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA2DF2F299749A6009AE700 /* RocketService.swift in Sources */,
+				EBA2DF1529971309009AE700 /* AppDelegate.swift in Sources */,
+				EBA2DF5B29975379009AE700 /* SearchBar.swift in Sources */,
+				EBA2DF47299750B5009AE700 /* ImageLoader.swift in Sources */,
+				EBA2DF4329974A3B009AE700 /* RocketListModel.swift in Sources */,
+				EBA2DF702997CDDA009AE700 /* RocketDetailViewModel.swift in Sources */,
+				EBA2DF37299749E5009AE700 /* RocketTileView.swift in Sources */,
+				EBA2DF6C2997CD7D009AE700 /* RocketDetailView.swift in Sources */,
+				EBA2DF4F2997518B009AE700 /* LoadingView.swift in Sources */,
+				EB047ACC29985C0D0088C11F /* RocketDetailModel.swift in Sources */,
+				EBA2DF682997B1BE009AE700 /* FailedView.swift in Sources */,
+				EBA2DEEC2996AF65009AE700 /* ContentView.swift in Sources */,
+				EBA2DF5F299760A9009AE700 /* ImageView.swift in Sources */,
+				EBA2DF3F29974A2B009AE700 /* RocketListVM.swift in Sources */,
+				EBA2DF53299751FD009AE700 /* RocketListView.swift in Sources */,
+				EBA2DF19299713FC009AE700 /* SceneDelegate.swift in Sources */,
+				EBA2DF6429979872009AE700 /* RocketResponse.swift in Sources */,
+				EB047ACF2998840C0088C11F /* UIViewExtension.swift in Sources */,
+				EBA2DF2A29974952009AE700 /* UIState.swift in Sources */,
+				EB047AD1299894D70088C11F /* StringExtension.swift in Sources */,
+				EBA2DF33299749B7009AE700 /* RocketListService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA2DEF32996AF67009AE700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA2DF30299749A6009AE700 /* RocketService.swift in Sources */,
+				EBA2DF1629971309009AE700 /* AppDelegate.swift in Sources */,
+				EBA2DF5C29975379009AE700 /* SearchBar.swift in Sources */,
+				EBA2DF48299750B5009AE700 /* ImageLoader.swift in Sources */,
+				EBA2DF4429974A3B009AE700 /* RocketListModel.swift in Sources */,
+				EBA2DF712997CDDA009AE700 /* RocketDetailViewModel.swift in Sources */,
+				EBA2DF38299749E5009AE700 /* RocketTileView.swift in Sources */,
+				EBA2DF6D2997CD7D009AE700 /* RocketDetailView.swift in Sources */,
+				EBA2DF502997518B009AE700 /* LoadingView.swift in Sources */,
+				EBA2DF692997B1BE009AE700 /* FailedView.swift in Sources */,
+				EBA2DEFC2996AF67009AE700 /* rocketappTests.swift in Sources */,
+				EBA2DF60299760A9009AE700 /* ImageView.swift in Sources */,
+				EBA2DF4029974A2B009AE700 /* RocketListVM.swift in Sources */,
+				EBA2DF54299751FD009AE700 /* RocketListView.swift in Sources */,
+				EBA2DF1A299713FC009AE700 /* SceneDelegate.swift in Sources */,
+				EBA2DF6529979872009AE700 /* RocketResponse.swift in Sources */,
+				EBA2DF2B29974952009AE700 /* UIState.swift in Sources */,
+				EBA2DF34299749B7009AE700 /* RocketListService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA2DEFD2996AF67009AE700 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA2DF39299749E5009AE700 /* RocketTileView.swift in Sources */,
+				EBA2DF2C29974952009AE700 /* UIState.swift in Sources */,
+				EBA2DF722997CDDA009AE700 /* RocketDetailViewModel.swift in Sources */,
+				EBA2DF61299760A9009AE700 /* ImageView.swift in Sources */,
+				EBA2DF1729971309009AE700 /* AppDelegate.swift in Sources */,
+				EBA2DF35299749B7009AE700 /* RocketListService.swift in Sources */,
+				EBA2DF5D29975379009AE700 /* SearchBar.swift in Sources */,
+				EBA2DF6E2997CD7D009AE700 /* RocketDetailView.swift in Sources */,
+				EBA2DF082996AF67009AE700 /* rocketappUITestsLaunchTests.swift in Sources */,
+				EBA2DF49299750B5009AE700 /* ImageLoader.swift in Sources */,
+				EBA2DF062996AF67009AE700 /* rocketappUITests.swift in Sources */,
+				EBA2DF6A2997B1BE009AE700 /* FailedView.swift in Sources */,
+				EBA2DF1B299713FC009AE700 /* SceneDelegate.swift in Sources */,
+				EBA2DF6629979872009AE700 /* RocketResponse.swift in Sources */,
+				EBA2DF4129974A2B009AE700 /* RocketListVM.swift in Sources */,
+				EBA2DF55299751FD009AE700 /* RocketListView.swift in Sources */,
+				EBA2DF31299749A6009AE700 /* RocketService.swift in Sources */,
+				EBA2DF512997518B009AE700 /* LoadingView.swift in Sources */,
+				EBA2DF4529974A3B009AE700 /* RocketListModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBA2DEF92996AF67009AE700 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBA2DEE52996AF65009AE700 /* rocketapp */;
+			targetProxy = EBA2DEF82996AF67009AE700 /* PBXContainerItemProxy */;
+		};
+		EBA2DF032996AF67009AE700 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBA2DEE52996AF65009AE700 /* rocketapp */;
+			targetProxy = EBA2DF022996AF67009AE700 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EBA2DF092996AF67009AE700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBA2DF0A2996AF67009AE700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EBA2DF0C2996AF67009AE700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = rocketapp/rocketapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"rocketapp/Preview Content\"";
+				DEVELOPMENT_TEAM = 46X9JWL5UU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = rocketapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rocket App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.astro.ios.rocketapp.fauzi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBA2DF0D2996AF67009AE700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = rocketapp/rocketapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"rocketapp/Preview Content\"";
+				DEVELOPMENT_TEAM = 46X9JWL5UU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = rocketapp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rocket App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.astro.ios.rocketapp.fauzi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBA2DF0F2996AF67009AE700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46X9JWL5UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.astro.ios.rocketappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rocketapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rocketapp";
+			};
+			name = Debug;
+		};
+		EBA2DF102996AF67009AE700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46X9JWL5UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.astro.ios.rocketappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rocketapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rocketapp";
+			};
+			name = Release;
+		};
+		EBA2DF122996AF67009AE700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46X9JWL5UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.astro.ios.rocketappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rocketapp;
+			};
+			name = Debug;
+		};
+		EBA2DF132996AF67009AE700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46X9JWL5UU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.astro.ios.rocketappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rocketapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBA2DEE12996AF65009AE700 /* Build configuration list for PBXProject "rocketapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA2DF092996AF67009AE700 /* Debug */,
+				EBA2DF0A2996AF67009AE700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBA2DF0B2996AF67009AE700 /* Build configuration list for PBXNativeTarget "rocketapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA2DF0C2996AF67009AE700 /* Debug */,
+				EBA2DF0D2996AF67009AE700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBA2DF0E2996AF67009AE700 /* Build configuration list for PBXNativeTarget "rocketappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA2DF0F2996AF67009AE700 /* Debug */,
+				EBA2DF102996AF67009AE700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBA2DF112996AF67009AE700 /* Build configuration list for PBXNativeTarget "rocketappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBA2DF122996AF67009AE700 /* Debug */,
+				EBA2DF132996AF67009AE700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBA2DEDE2996AF65009AE700 /* Project object */;
+}
