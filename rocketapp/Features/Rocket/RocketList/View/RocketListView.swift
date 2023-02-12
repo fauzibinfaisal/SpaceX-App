@@ -15,19 +15,19 @@ struct RocketListView: View {
     }
     
     var body: some View {
-        NavigationView {
+        VStack {
+            SearchBar(text: $viewModel.searchText).padding(.horizontal, 8)
             switch viewModel.state {
             case .loading:
                 LoadingView()
-            case .success(let rockets):
-                RocketListSuccessView(rockets: rockets)
+            case .success(_):
+                RocketListSuccessView(rockets: viewModel.filteredRocketModels)
             case .failed(let error):
                 FailedView(error: error) {
                     self.viewModel.fetchRockets()
                 }
             }
         }
-        .navigationBarTitle("Rocket List 🚀")
     }
 }
 
@@ -38,7 +38,6 @@ struct RocketListSuccessView: View {
         List(rockets, id: \.id) { rocket in
             NavigationLink(destination: RocketDetailView(rocketId: rocket.id)) {
                 RocketRowView(rocket: rocket)
-                
             }
         }
     }

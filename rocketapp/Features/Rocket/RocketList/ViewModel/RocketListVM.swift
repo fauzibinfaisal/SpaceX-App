@@ -8,7 +8,15 @@ import Foundation
 
 class RocketListViewModel: ObservableObject {
     @Published var state = UIState<[RocketModel]>.loading
+    @Published var searchText = ""
+    @Published var rocketModels = [RocketModel]()
     private let rocketService: RocketService
+    
+    var filteredRocketModels: [RocketModel] {
+            return rocketModels.filter {
+                searchText.isEmpty ? true : $0.name.lowercased().contains(searchText.lowercased())
+            }
+        }
     
     init() {
         self.rocketService = RocketService()
@@ -21,8 +29,8 @@ class RocketListViewModel: ObservableObject {
             switch result {
             case .success(let rockets):
                 DispatchQueue.main.async {
-                    let rocketModels = rockets.toRocketModel()
-                    self.state = .success(rocketModels)
+                    self.rocketModels = rockets.toRocketModel()
+                    self.state = .success(self.rocketModels)
                 }
                 
             case .failure(let error):
