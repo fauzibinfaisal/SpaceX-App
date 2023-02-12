@@ -6,9 +6,9 @@
 //
 
 import XCTest
+//@testable import rocketapp
 
 final class rocketappUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }

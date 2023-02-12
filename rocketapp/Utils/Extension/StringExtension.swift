@@ -8,4 +8,14 @@
 import Foundation
 
 extension String {
+    func convertDateString(fromFormat: String, toFormat: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = fromFormat
+        guard let date = dateFormatter.date(from: self) else {
+            return self
+        }
+        
+        dateFormatter.dateFormat = toFormat
+        return dateFormatter.string(from: date)
+    }
 }

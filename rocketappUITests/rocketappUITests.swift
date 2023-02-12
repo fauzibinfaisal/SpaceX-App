@@ -6,9 +6,10 @@
 //
 
 import XCTest
+//@testable import rocketapp
 
-final class rocketappUITests: XCTestCase {
-
+class rocketappUITests: XCTestCase {
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
@@ -38,4 +39,32 @@ final class rocketappUITests: XCTestCase {
             }
         }
     }
+//    var app: XCUIApplication!
+//
+//    override func setUp() {
+//        super.setUp()
+//        app = XCUIApplication()
+//        app.launch()
+//    }
+//
+//    func testRocketList() {
+//        app = XCUIApplication()
+//                app.launch()
+//        let rocketListTable = app.tables.element(boundBy: 0)
+//        XCTAssertTrue(rocketListTable.exists, "Rocket List table not exists")
+//
+//        let cells = rocketListTable.cells
+//        XCTAssertTrue(cells.count > 0, "There is no rocket available")
+//
+//        cells.element(boundBy: 0).tap()
+//
+//        let rocketDetailView = app.otherElements["RocketDetailView"]
+//        XCTAssertTrue(rocketDetailView.exists, "Rocket Detail view not exists")
+//
+//        let backButton = app.navigationBars.buttons.element(boundBy: 0)
+//        XCTAssertTrue(backButton.exists, "Back button not exists")
+//        backButton.tap()
+//
+//        XCTAssertTrue(rocketListTable.exists, "Rocket List table not exists after back from detail")
+//    }
 }

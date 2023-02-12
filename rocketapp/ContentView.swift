@@ -8,15 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            SplashScreenView()
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct SplashScreenView: View {
+    
+    @State private var showRocketList = false
+    
+    var body: some View {
+        ZStack {
+            Image(systemName: "paperplane.circle.fill")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 200, height: 200)
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                self.showRocketList = true
+            }
+        }.sheet(isPresented: $showRocketList, content: {
+            NavigationView {
+                RocketListView()
+            }
+        })
     }
 }
-
-
