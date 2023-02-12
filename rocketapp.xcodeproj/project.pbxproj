@@ -28,9 +28,6 @@
 		EBA2DF2F299749A6009AE700 /* RocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF2E299749A6009AE700 /* RocketService.swift */; };
 		EBA2DF30299749A6009AE700 /* RocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF2E299749A6009AE700 /* RocketService.swift */; };
 		EBA2DF31299749A6009AE700 /* RocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF2E299749A6009AE700 /* RocketService.swift */; };
-		EBA2DF33299749B7009AE700 /* RocketListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF32299749B7009AE700 /* RocketListService.swift */; };
-		EBA2DF34299749B7009AE700 /* RocketListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF32299749B7009AE700 /* RocketListService.swift */; };
-		EBA2DF35299749B7009AE700 /* RocketListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF32299749B7009AE700 /* RocketListService.swift */; };
 		EBA2DF37299749E5009AE700 /* RocketTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF36299749E5009AE700 /* RocketTileView.swift */; };
 		EBA2DF38299749E5009AE700 /* RocketTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF36299749E5009AE700 /* RocketTileView.swift */; };
 		EBA2DF39299749E5009AE700 /* RocketTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2DF36299749E5009AE700 /* RocketTileView.swift */; };
@@ -105,7 +102,6 @@
 		EBA2DF1C2997145C009AE700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EBA2DF2929974952009AE700 /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
 		EBA2DF2E299749A6009AE700 /* RocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketService.swift; sourceTree = "<group>"; };
-		EBA2DF32299749B7009AE700 /* RocketListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListService.swift; sourceTree = "<group>"; };
 		EBA2DF36299749E5009AE700 /* RocketTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketTileView.swift; sourceTree = "<group>"; };
 		EBA2DF3E29974A2B009AE700 /* RocketListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListVM.swift; sourceTree = "<group>"; };
 		EBA2DF4229974A3B009AE700 /* RocketListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketListModel.swift; sourceTree = "<group>"; };
@@ -329,7 +325,6 @@
 			children = (
 				EBA2DF6229979844009AE700 /* Responses */,
 				EBA2DF2E299749A6009AE700 /* RocketService.swift */,
-				EBA2DF32299749B7009AE700 /* RocketListService.swift */,
 			);
 			path = Rocket;
 			sourceTree = "<group>";
@@ -492,7 +487,6 @@
 				EB047ACF2998840C0088C11F /* UIViewExtension.swift in Sources */,
 				EBA2DF2A29974952009AE700 /* UIState.swift in Sources */,
 				EB047AD1299894D70088C11F /* StringExtension.swift in Sources */,
-				EBA2DF33299749B7009AE700 /* RocketListService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,7 +511,6 @@
 				EBA2DF1A299713FC009AE700 /* SceneDelegate.swift in Sources */,
 				EBA2DF6529979872009AE700 /* RocketResponse.swift in Sources */,
 				EBA2DF2B29974952009AE700 /* UIState.swift in Sources */,
-				EBA2DF34299749B7009AE700 /* RocketListService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +523,6 @@
 				EBA2DF722997CDDA009AE700 /* RocketDetailViewModel.swift in Sources */,
 				EBA2DF61299760A9009AE700 /* ImageView.swift in Sources */,
 				EBA2DF1729971309009AE700 /* AppDelegate.swift in Sources */,
-				EBA2DF35299749B7009AE700 /* RocketListService.swift in Sources */,
 				EBA2DF5D29975379009AE700 /* SearchBar.swift in Sources */,
 				EBA2DF6E2997CD7D009AE700 /* RocketDetailView.swift in Sources */,
 				EBA2DF082996AF67009AE700 /* rocketappUITestsLaunchTests.swift in Sources */,
