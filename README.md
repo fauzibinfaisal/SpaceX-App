@@ -1,7 +1,7 @@
 # SpaceX App
 
 
-[![Swift](https://img.shields.io/badge/swift-5.4-orange.svg)](https://swift.org/)  [![Xcode](https://img.shields.io/badge/xcode-13.2-blue.svg)](https://developer.apple.com/xcode/)  [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)  
+[![Swift](https://img.shields.io/badge/swift-5.4-orange.svg)](https://swift.org/)  [![Xcode](https://img.shields.io/badge/xcode-14.2-blue.svg)](https://developer.apple.com/xcode/)  [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)  
 
 
 SpaceX App is an iOS application built using SwiftUI. It has a minimum iOS development requirement of version 13 and supports portrait-landscape orientation and dark mode. The app is designed to display SpaceX rocket details and implement SOLID principles (work in progress).
